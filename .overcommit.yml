@@ -1,0 +1,12 @@
+# https://github.com/brigade/overcommit/blob/master/config/default.yml
+
+PreCommit:
+  RuboCop:
+    enabled: true
+    on_warn: fail
+
+  Reek:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true

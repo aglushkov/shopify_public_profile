@@ -1,0 +1,45 @@
+# https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - bin/*
+    - db/schema.rb
+
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+
+Rails:
+  Enabled: true
+Metrics/LineLength:
+  Exclude:
+    - config/**/*
+    - db/**/*
+    - Rakefile
+    - Gemfile
+    - spec/*
+
+RSpec/DescribeClass:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+# Style/StringLiterals:
+#   Enabled: true
+#   EnforcedStyle: double_quotes
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Lint/EndAlignment:
+  AlignWith: variable
+CaseIndentation:
+  IndentWhenRelativeTo: end
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+Style/DotPosition:
+  EnforcedStyle: trailing
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
