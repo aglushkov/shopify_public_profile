@@ -4,6 +4,7 @@
 # the maximum value specified for Puma. Default is set to 5 threads for minimum
 # and maximum, this matches the default thread size of Active Record.
 #
+bind 'ssl://127.0.0.1:3000?key=/home/andrey/.ssh/localhost.key&cert=/home/andrey/.ssh/localhost.crt'
 threads_count = ENV.fetch('RAILS_MAX_THREADS') { 5 }.to_i
 threads threads_count, threads_count
 
