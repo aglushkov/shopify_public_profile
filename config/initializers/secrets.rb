@@ -1,1 +1,1 @@
-SECRETS = Rails.application.secrets
+SECRETS ||= Rails.application.secrets
